@@ -1,0 +1,37 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Ejercicio practico</title>
+</head>
+<body>
+    <div>
+        <h2>Ejercicio Practico</h2>
+        <h3 id="Error"></h3>
+        <div id="CalificacionesValoresMayor"></div><br />
+        <div id="CalificacionesValoresMenor"></div><br />
+        <div id="CalificacionesValoresPromedio"></div>
+        <canvas id="popChart" max-width="200" height="200" style="max-height:900px;"></canvas><br />
+        <canvas id="pieChart" max-width="200" height="200" style="max-height:400px; max-width:400px"></canvas>
+    </div>
+</body>
+</html>
+<script src="~/Scripts/jQuery-2.1.4.min.js"></script>
+<script src="~/Scripts/jquery-ui.js"></script>
+<script src="~/Scripts/Chart/Chart.min.js"></script>
+<script src="~/Scripts/EjercicioController.js"></script>
+
+<script>
+        $(function () {
+            var objEjercicio = new EjercicioController();
+            objEjercicio.Incializar();
+        });
+</script>
+
+
+
+
+
+
+
